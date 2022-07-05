@@ -3,25 +3,38 @@ programa
 	
 	funcao inicio()
 	{
-		real cC,cF,pD = 0.28,pI = 0.45
+		const inteiro TAMANHO = 3
+		inteiro mat[TAMANHO][2],l,c
 
-		escreva("\nInforme o valor do custo de fábrica: ")
-		leia(cF)
-
-		cC = (cF +(cF*pD) + (cF*pI))
-
-		escreva("\nCusto ao consumidor foi de: ",cC)
-
-		
-		
+		para(l=0;l<TAMANHO;l++)
+		{
+			para(c=0;c<2;c++)
+			{
+				escreva("\n Valor: ")
+				leia(mat[l][c])
+				
+			}
+		}
+		limpa()
+		para(l=0;l<TAMANHO;l++)
+		{
+			para(c=0;c<2;c++)
+			{
+				escreva(" [ ",mat[l][c]," ] ")
+				leia(ma
+				t[l][c])
+				
+			}
+			escreva("\n")
 	}
+}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 58; 
+ * @POSICAO-CURSOR = 331; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

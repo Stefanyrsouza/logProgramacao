@@ -3,17 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		real cC,cF,pD = 0.28,pI = 0.45
+		inteiro numero[4],x
 
-		escreva("\nInforme o valor do custo de fábrica: ")
-		leia(cF)
-
-		cC = (cF +(cF*pD) + (cF*pI))
-
-		escreva("\nCusto ao consumidor foi de: ",cC)
-
-		
-		
+		para(x=0;x<4;x++)
+		{
+			escreva("\nEntre com um número: ")
+			leia(numero[x])
+		}
+		para(x=0;x<4;x++)
+		{
+			escreva("\nValor posição ",x+1,":",numero[x])
+		}
+		para(x=3;x>=0;x--)
+		{
+			escreva("\nValor posição ",x+1,":",numero[x])
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 58; 
+ * @POSICAO-CURSOR = 59; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

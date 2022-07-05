@@ -3,17 +3,21 @@ programa
 	
 	funcao inicio()
 	{
-		real cC,cF,pD = 0.28,pI = 0.45
+		inteiro n1[3][3],l,c,somaTotal=0,d=0
 
-		escreva("\nInforme o valor do custo de fábrica: ")
-		leia(cF)
+		para(l=0;l<3;l++)
+		{
+			para(c=0;c<3;c++)
+			{
+				escreva("\nEntre com os valores: ")
+				leia(n1[l][c])
 
-		cC = (cF +(cF*pD) + (cF*pI))
-
-		escreva("\nCusto ao consumidor foi de: ",cC)
-
-		
-		
+				somaTotal = somaTotal + n1[l][c]
+				d = n1[0][0] + n1[1][1] + n1 [2][2]
+			}
+		}
+		escreva("\nA soma total é de: ",somaTotal)
+		escreva("\nA soma da diagonal principal é de: ",d)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 58; 
+ * @POSICAO-CURSOR = 241; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
